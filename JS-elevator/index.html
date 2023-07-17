@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Elevator JS practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+<audio></audio>
+<section class="container">
+  <h1 id="title"> The elevator Game</h1>
+  <div class="main-frame">
+
+    <div class="top-stripe">
+      <div class="text">Number of stages:
+        <input type="number" min="0" max="7" class="input" id="no-of-stages-input" value="5">
+      </div>
+      <div class="text">Elevator capacity:
+        <input type="number" min="1" class="input" id="elevator-capacity-input" value="5">
+      </div>
+      <div class="button-container">
+        <button id="restart-button">RESTART</button>
+        <button id="pause-button">PAUSE</button>
+      </div>
+    </div>
+
+    <canvas height="800" id="canvas" style="border: 1px solid black" width="1200"></canvas>
+    <div class="bottom-stripe">
+      <div class="shape" id="capacity-box">
+                        <span class="text">
+                    Pawn(s) in elevator:
+                </span>
+        <span class="variable-text" id="capacity-counter">
+                    0
+                </span>
+      </div>
+
+      <div class="shape" id="point-box">
+                        <span class="text">
+                    Your points:
+                </span>
+        <span class="variable-text" id="point-counter">
+                    0
+                </span>
+      </div>
+
+      <div class="shape" id="loose-point-box">
+
+      <span class="variable-text" id="loose-point-counter">
+                    0
+                </span>
+        <span class="text">
+                    pawn already dead
+                </span>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+</body>
+</html>
